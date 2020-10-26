@@ -35,7 +35,7 @@
         <div style="display: table-row">
             <div class="name">Fida Mohammad</div>
             <div class="affiliation">PhD Student at University of Amsterdam</div>
-            <div class="affiliation">Intelligent Sensory Information Systems Lab of Prof. dr. Cees G.M. Snoek</div>
+            <div class="affiliation">Video & Image Sense Lab  of Prof. dr. Cees Snoek</div>
             <div class="contact">fmthoker [at] gmail.com</div>
         </div>
     </div>
@@ -70,6 +70,20 @@ PUBLICATIONS -->
             <div class="pubbox"><a href="publications/pdf/cross-modal.pdf">pdf</a></div>
             <div class="pubbox"><a href="publications/bibtex/cross-modal.bib">BibTex</a></div>
             <div class="abstract"> In this work, we address the problem how a network for action recognition that has been trained on a modality like RGB videos can be adapted to recognize actions for another modality like sequences of 3D human poses. To this end, we extract the knowledge of the trained teacher network for the source modality and transfer it to a small ensemble of student networks for the target modality. For the cross-modal knowledge distillation, we do not require any annotated data. Instead we use pairs of sequences of both modalities as supervision, which are straightforward to acquire. In contrast to previous works for knowledge distillation that use a KL-loss, we show that the cross-entropy loss together with mutual learning of a small ensemble of student networks performs better. In fact, the proposed approach for cross-modal knowledge distillation nearly achieves the accuracy of a student network trained with full supervision.</div>
+        </div>
+    </div>
+    <div class="publication">
+        <div class="pubimg"><img src="publications/img/feature-supervised.png" class="thumbnail"></div>
+        <div style="display:table-row">
+            <div class="pubtitle"> Feature-Supervised Action Modality Transfer  </div>
+            <div class="pubauthors">Fida Mohammad Thoker, Cees Snoek</div>
+            <div class="pubinfo">IEEE International Conference on Pattern Recognition (ICPR), 2020</div>
+            <!-- <div class="pubinfo">2019 IEEE International Conference on Pattern Recognition (ICPR), 2020</div>
+PUBLICATIONS -->
+            <div class="pubbox trigger"><a href="javascript:void(0)">Abstract</a></div>
+            <div class="pubbox"><a href="publications/pdf/feature-supervised.pdf">pdf</a></div>
+            <div class="pubbox"><a href="publications/bibtex/feature-supervised.bib">BibTex</a></div>
+            <div class="abstract"> This paper strives for action recognition and detection in video modalities like RGB, depth maps or 3D-skeleton sequences when only limited modality-specific labeled examples are available. For the RGB, and derived optical-flow, modality many large-scale labeled datasets have been made available. They have become the de facto pre-training choice when recognizing or detecting new actions from RGB datasets that have limited amounts of labeled examples available. Unfortunately, large-scale labeled action datasets for other modalities are unavailable for pre-training. In this paper, our goal is to recognize actions from limited examples in non-RGB video modalities, by learning from large-scale labeled RGB data.  To this end, we  propose a two-step training process: (i) we extract action representation knowledge from an RGB-trained teacher network and adapt it to a non-RGB student network. (ii) we then fine-tune the transfer model with available labeled examples of the target modality. For the knowledge transfer we introduce feature-supervision strategies, which rely on unlabeled pairs of two modalities (the RGB and the target modality) to transfer feature level representations from the teacher to the the student network.  Ablations and generalizations with two RGB source datasets and two non-RGB target datasets demonstrate that an optical-flow teacher provides better action transfer features than RGB for both depth maps and 3D-skeletons, even when evaluated on a different target domain, or for a different task. Compared to alternative cross-modal action transfer methods we show a good improvement in performance especially when labeled non-RGB examples to learn from are scarce.</div>
         </div>
     </div>
 
